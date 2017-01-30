@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>AngularJS v 1.6.0 릴리즈에 따른 변경사항</title><meta name="description" content="최근(2016.12.8) 릴리즈된 AngularJS 1.6.0 버전으로 올리고 나니 여러 문제가 있어서 하나씩 해결 하면서 정리하려고 합니다. (추가 예정)"><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">AngularJS v 1.6.0 릴리즈에 따른 변경사항</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+최근(2016.12.8) 릴리즈된 AngularJS 1.6.0 버전으로 올리고 나니 여러 문제가 있어서 하나씩 해결 하면서 정리하려고 합니다. (추가 예정)
+</section>
+<section data-field="body" class="e-content">
+<section name="aeaa" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="db46" id="db46" class="graf graf--h3 graf--leading graf--title">AngularJS v 1.6.0 릴리즈에 따른 변경사항</h3><p name="2d48" id="2d48" class="graf graf--p graf-after--h3">최근(2016.12.8) 릴리즈된 AngularJS 1.6.0 버전으로 올리고 나니 여러 문제가 있어서 하나씩 해결 하면서 정리하려고 합니다. (추가 예정)</p><p name="f540" id="f540" class="graf graf--p graf-after--p">꽤 많은 부분이 달라진것 같네요. 자세한 내용은 아래 문서를 참고해 주세요</p><p name="27af" id="27af" class="graf graf--p graf-after--p graf--last"><a href="https://github.com/angular/angular.js/blob/master/CHANGELOG.md" data-href="https://github.com/angular/angular.js/blob/master/CHANGELOG.md" class="markup--anchor markup--p-anchor" rel="nofollow" target="_blank">https://github.com/angular/angular.js/blob/master/CHANGELOG.md</a></p></div></div></section><section name="8f2b" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="98cd" id="98cd" class="graf graf--h3 graf--leading">Possibly unhandled rejection: {} 에러 처리</h3><p name="2a05" id="2a05" class="graf graf--p graf-after--h3">1.5.x 버전에서 해결되었던 버그 인데 이번 버전업이 되면서 다시 나온 이슈 인것 같습니다.</p><pre name="4c3f" id="4c3f" class="graf graf--pre graf-after--p"><code class="markup--code markup--pre-code">app.config([&#39;$qProvider&#39;, function ($qProvider) {<br>    $qProvider.errorOnUnhandledRejections(false);<br>}]);</code></pre><p name="efa9" id="efa9" class="graf graf--p graf-after--pre">config 부분에 ‘$qProvider’ 를 추가하면 해당 에러가 나타나지 않습니다.</p><p name="1826" id="1826" class="graf graf--p graf-after--p graf--last">참고 : <a href="https://github.com/angular-ui/ui-router/issues/2889" data-href="https://github.com/angular-ui/ui-router/issues/2889" class="markup--anchor markup--p-anchor" rel="nofollow" target="_blank">https://github.com/angular-ui/ui-router/issues/2889</a></p></div></div></section><section name="31cf" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="3e6a" id="3e6a" class="graf graf--h3 graf--leading">$http</h3><p name="fcce" id="fcce" class="graf graf--p graf-after--h3">$http Response 에 대한 Success / Error 처리가 변경되었습니다.</p><pre name="6a56" id="6a56" class="graf graf--pre graf-after--p">// 변경전<br>$http(...).<br>  success(function onSuccess(data, status, headers, config) {<br>    // Handle success<br>    ...<br>  }).<br>  error(function onError(data, status, headers, config) {<br>    // Handle error<br>    ...<br>  });</pre><pre name="fe8d" id="fe8d" class="graf graf--pre graf-after--pre">// 변경후</pre><pre name="5bef" id="5bef" class="graf graf--pre graf-after--pre">$http(...).<br>  then(function onSuccess(response) {<br>    // Handle success<br>    var data = response.data;<br>    var status = response.status;<br>    var statusText = response.statusText;<br>    var headers = response.headers;<br>    var config = response.config;<br>    ...<br>  }, function onError(response) {<br>    // Handle error<br>    var data = response.data;<br>    var status = response.status;<br>    var statusText = response.statusText;<br>    var headers = response.headers;<br>    var config = response.config;<br>    ...<br>  });</pre><pre name="2886" id="2886" class="graf graf--pre graf-after--pre">// 또는</pre><pre name="a8f9" id="a8f9" class="graf graf--pre graf-after--pre">$http(...).<br>  then(function onSuccess(response) {<br>    // Handle success<br>    var data = response.data;<br>    var status = response.status;<br>    var statusText = response.statusText;<br>    var headers = response.headers;<br>    var config = response.config;<br>    ...<br>  }).<br>  catch(function onError(response) {<br>    // Handle error<br>    var data = response.data;<br>    var status = response.status;<br>    var statusText = response.statusText;<br>    var headers = response.headers;<br>    var config = response.config;<br>    ...<br>  });</pre><p name="339d" id="339d" class="graf graf--p graf-after--pre graf--last">참고 : <a href="https://github.com/angular/angular.js/commit/b54a39e2029005e0572fbd2ac0e8f6a4e5d69014" data-href="https://github.com/angular/angular.js/commit/b54a39e2029005e0572fbd2ac0e8f6a4e5d69014" class="markup--anchor markup--p-anchor" rel="nofollow" target="_blank">https://github.com/angular/angular.js/commit/b54a39e2029005e0572fbd2ac0e8f6a4e5d69014</a></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@schemr" class="p-author h-card">스키머(schemr)</a> on <a href="https://medium.com/p/8e3778e513d0"><time class="dt-published" datetime="2016-12-12T08:51:44.274Z">December 12, 2016</time></a>.</p><p>Exported from <a href="https://medium.com">Medium</a> on January 30, 2017.</p></footer></article>
+
+</body></html>

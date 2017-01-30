@@ -1,3 +1,3 @@
 # Study List
 
-- /article : medium post article
+- /articles : medium post article

@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>ECMAScript 2016 표준 릴리즈</title><meta name="description" content="ECMAScript의 표준 릴리즈 주기를 1년으로 결정하고 뒤에 붙는 버전(ES7)대신 발표년도(2016)를 쓰기로 한 이후 첫 정식 릴리즈 입니다."><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">ECMAScript 2016 표준 릴리즈</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+ECMAScript의 표준 릴리즈 주기를 1년으로 결정하고 뒤에 붙는 버전(ES7)대신 발표년도(2016)를 쓰기로 한 이후 첫 정식 릴리즈 입니다.
+</section>
+<section data-field="body" class="e-content">
+<section name="c90b" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="6cfe" id="6cfe" class="graf graf--h3 graf--leading graf--title">ECMAScript 2016 표준 릴리즈</h3><p name="dbdd" id="dbdd" class="graf graf--p graf-after--h3">ECMAScript의 표준 릴리즈 주기를 1년으로 결정하고 뒤에 붙는 버전(ES7)대신 발표년도(2016)를 쓰기로 한 이후 첫 정식 릴리즈 입니다.</p><p name="ccbd" id="ccbd" class="graf graf--p graf-after--p graf--last">ES2016은 ES2015에 비해서 크게 달라진 점은 없지만 자바스크립트의 표준화가 이루어 지고 있다는 점에서 의미가 있다고 생각합니다.</p></div></div></section><section name="8d50" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="dfd2" id="dfd2" class="graf graf--h3 graf--leading"><a href="https://github.com/tc39/Array.prototype.includes/" data-href="https://github.com/tc39/Array.prototype.includes/" class="markup--anchor markup--h3-anchor" target="_blank">Array.prototype.includes</a></h3><p name="c194" id="c194" class="graf graf--p graf-after--h3">이 메소드는 원래 ES2015에서 Array.prototype.contains로 추가 될 예정이였으나 명칭의 혼동이 있어서 이번에 includes로 추가 되었습니다. 배열안에 있는 데이터 중에서 찾고자 하는 요소가 있는지 여부를 알수 있는 메소드 입니다.</p><h3 name="1012" id="1012" class="graf graf--h3 graf-after--p">Syntax</h3><p name="a7e5" id="a7e5" class="graf graf--p graf-after--h3">array.includes(searchElement[, fromIndex])</p><h3 name="3635" id="3635" class="graf graf--h3 graf-after--p">Examples</h3><p name="64de" id="64de" class="graf graf--p graf-after--h3">[1, 2, 3].includes(2); // true</p><p name="0d36" id="0d36" class="graf graf--p graf-after--p">[1, 2, 3].includes(4); // false</p><p name="5d25" id="5d25" class="graf graf--p graf-after--p">[1, 2, 3].includes(3, 3); // false</p><p name="f8d7" id="f8d7" class="graf graf--p graf-after--p">[1, 2, 3].includes(3, -1); // true</p><p name="2d8b" id="2d8b" class="graf graf--p graf-after--p graf--last">[1, 2, NaN].includes(NaN); // true</p></div></div></section><section name="7492" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="e6ed" id="e6ed" class="graf graf--h3 graf--leading"><a href="https://github.com/rwaldron/exponentiation-operator" data-href="https://github.com/rwaldron/exponentiation-operator" class="markup--anchor markup--h3-anchor" target="_blank">Exponentiation(거듭제곱) Operator</a></h3><p name="25d4" id="25d4" class="graf graf--p graf--startsWithDoubleQuote graf-after--h3">“<strong class="markup--strong markup--p-strong">x ** y”</strong> 형태로 사용하며 Math.pow(x, y) 의 결과와 동일합니다.</p><h3 name="6ed9" id="6ed9" class="graf graf--h3 graf-after--p">Syntax</h3><p name="ea5d" id="ea5d" class="graf graf--p graf-after--h3">var1 ** var2</p><h3 name="c9ed" id="c9ed" class="graf graf--h3 graf-after--p">Examples</h3><p name="9b8b" id="9b8b" class="graf graf--p graf-after--h3">2 ** 3 // 8</p><p name="8ba1" id="8ba1" class="graf graf--p graf-after--p">3 ** 2 // 9</p><p name="8a76" id="8a76" class="graf graf--p graf-after--p">3 ** 2.5 // 15.588457268119896</p><p name="068b" id="068b" class="graf graf--p graf-after--p">10 ** -1 // 0.1</p><p name="b115" id="b115" class="graf graf--p graf-after--p">NaN ** 2 // NaN</p><p name="20a7" id="20a7" class="graf graf--p graf-after--p">2 ** 3 ** 2 // 512</p><p name="c650" id="c650" class="graf graf--p graf-after--p">2 ** (3 ** 2) // 512</p><p name="a53a" id="a53a" class="graf graf--p graf-after--p graf--last">(2 ** 3) ** 2 // 64</p></div></div></section><section name="6ecb" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="c163" id="c163" class="graf graf--h3 graf--leading">지원</h3><p name="7505" id="7505" class="graf graf--p graf-after--h3 graf--last">크롬은 52 버전에서 ES 2016을 지원할 예정이고, 파이어폭스는 이미 정식 배포된 43버전부터 시험판 단계인 48 버전까지 단계별로 ES 2016 기능을 구현할 예정입니다.</p></div></div></section><section name="de49" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="20f1" id="20f1" class="graf graf--h3 graf--leading">참고링크</h3><p name="feb9" id="feb9" class="graf graf--p graf-after--h3 graf--last"><a href="http://www.ecma-international.org/ecma-262/7.0/index.html" data-href="http://www.ecma-international.org/ecma-262/7.0/index.html" class="markup--anchor markup--p-anchor" target="_blank">ECMAScript 2016 Language Specification</a></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@schemr" class="p-author h-card">스키머(schemr)</a> on <a href="https://medium.com/p/520048e4e803"><time class="dt-published" datetime="2016-07-04T02:47:19.158Z">July 4, 2016</time></a>.</p><p>Exported from <a href="https://medium.com">Medium</a> on January 30, 2017.</p></footer></article>
+
+</body></html>
