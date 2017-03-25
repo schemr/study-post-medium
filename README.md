@@ -6,6 +6,10 @@
 
 #### 2017
 
+- [Angular 4 정식버전 릴리즈 (v4.0.0)](https://medium.com/witinweb/angular-4-%EC%A0%95%EC%8B%9D%EB%B2%84%EC%A0%84-%EB%A6%B4%EB%A6%AC%EC%A6%88-v4-0-0-c8390578888a#.g4osreh1y)
+
+- [Angular 2 디버깅 툴 “Angular Augury”](https://medium.com/@schemr/angular-2-%EB%94%94%EB%B2%84%EA%B9%85-%ED%88%B4-angular-augury-89989b39f0bb#.1w758r2mt)
+
 - [Ionic 2.0.0 final 요약 (Ionic 2)](https://medium.com/witinweb/ionic-2-0-0-final-%EC%9A%94%EC%95%BD-969182e4c6bc#.kg30nqpcv)
 - [Vue-CLI 로 Vue.js 시작하기 (browserify / webpack)](https://medium.com/witinweb/vue-cli-%EB%A1%9C-vue-js-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-browserify-webpack-22582202cd52)
 - [“Boostnote” 개발자를 위한 데스크탑 노트 앱](https://medium.com/witinweb/boostnote-%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%83%91-%EB%85%B8%ED%8A%B8-%EC%95%B1-fe862cfc1a05)
