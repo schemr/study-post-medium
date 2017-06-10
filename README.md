@@ -6,14 +6,14 @@
 
 #### 2017
 
+- [Angular 4 Pipes 에 대해서](https://medium.com/witinweb/angular-4-2-pipes-%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C-651848186633)
 - [Angular 4 정식버전 릴리즈 (v4.0.0)](https://medium.com/witinweb/angular-4-%EC%A0%95%EC%8B%9D%EB%B2%84%EC%A0%84-%EB%A6%B4%EB%A6%AC%EC%A6%88-v4-0-0-c8390578888a#.g4osreh1y)
-
 - [Angular 2 디버깅 툴 “Angular Augury”](https://medium.com/@schemr/angular-2-%EB%94%94%EB%B2%84%EA%B9%85-%ED%88%B4-angular-augury-89989b39f0bb#.1w758r2mt)
-
 - [Ionic 2.0.0 final 요약 (Ionic 2)](https://medium.com/witinweb/ionic-2-0-0-final-%EC%9A%94%EC%95%BD-969182e4c6bc#.kg30nqpcv)
 - [Vue-CLI 로 Vue.js 시작하기 (browserify / webpack)](https://medium.com/witinweb/vue-cli-%EB%A1%9C-vue-js-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-browserify-webpack-22582202cd52)
 - [“Boostnote” 개발자를 위한 데스크탑 노트 앱](https://medium.com/witinweb/boostnote-%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%8D%B0%EC%8A%A4%ED%81%AC%ED%83%91-%EB%85%B8%ED%8A%B8-%EC%95%B1-fe862cfc1a05)
 - [ionic 2 시작하기](https://medium.com/witinweb/ionic-2-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-ed011c7fe69b)
+
 
 #### 2016
 
@@ -24,6 +24,7 @@
 - [Angular 2 CLI 로 프로젝트 시작하기](https://medium.com/witinweb/angular-2-cli-%EB%A1%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-11a188e17223)
 - [ECMAScript 2016 표준 릴리즈](https://medium.com/@schemr/ecmascript-2016-%ED%91%9C%EC%A4%80-%EB%A6%B4%EB%A6%AC%EC%A6%88-520048e4e803)
 - [Google Resizer 소개](https://medium.com/@schemr/google-resizer-%EC%86%8C%EA%B0%9C-4c4f45b5f4c3#.xr4eq9njb)
+
 
 #### 2015
 
