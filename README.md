@@ -6,7 +6,7 @@
 
 #### 2017
 
-- [Angular 5.1 & CLI 1.6 릴리즈] (https://medium.com/witinweb/angular-5-1-cli-1-6-%EB%A6%B4%EB%A6%AC%EC%A6%88-5a228f4c974f)
+- [Angular 5.1 & CLI 1.6 릴리즈](https://medium.com/witinweb/angular-5-1-cli-1-6-%EB%A6%B4%EB%A6%AC%EC%A6%88-5a228f4c974f)
 
 - [Angular 4 Pipes 에 대해서](https://medium.com/witinweb/angular-4-2-pipes-%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C-651848186633)
 - [Angular 4 정식버전 릴리즈 (v4.0.0)](https://medium.com/witinweb/angular-4-%EC%A0%95%EC%8B%9D%EB%B2%84%EC%A0%84-%EB%A6%B4%EB%A6%AC%EC%A6%88-v4-0-0-c8390578888a#.g4osreh1y)
